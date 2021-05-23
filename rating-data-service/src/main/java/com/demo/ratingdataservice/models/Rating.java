@@ -1,31 +1,31 @@
 package com.demo.ratingdataservice.models;
 
 public class Rating {
-    private String name;
-    private int id;
+    private String movieId;
+    private int rating;
 
     public Rating() {
     }
 
-    public String getName() {
-        return name;
+    public String getMovieId() {
+        return movieId;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setMovieId(String movieId) {
+        this.movieId = movieId;
     }
 
-    public int getId() {
-        return id;
+    public int getRating() {
+        return rating;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setRating(int rating) {
+        this.rating = rating;
     }
 
-    public Rating(String name, int id) {
-        this.name = name;
-        this.id = id;
+    public Rating(String movieId, int rating) {
+        this.movieId = movieId;
+        this.rating = rating;
     }
 
 }

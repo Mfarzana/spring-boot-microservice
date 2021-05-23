@@ -14,6 +14,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class MovieServiceController {
     @RequestMapping("/{movieId}")
     public Movie getMovieInfo(@PathVariable("movieId") String movieId) {
-        return new Movie("test movie ", "testIid");
+        return new Movie("Tansformer", "1234", " Test Description");
     }
 }

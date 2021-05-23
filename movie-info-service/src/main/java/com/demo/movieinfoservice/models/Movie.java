@@ -3,6 +3,18 @@ package com.demo.movieinfoservice.models;
 public class Movie {
     private String name;
     private String id;
+    private String desc;
+
+    public String getDesc() {
+        return desc;
+    }
+
+    public Movie() {
+    }
+
+    public void setDesc(String desc) {
+        this.desc = desc;
+    }
 
     public String getName() {
         return name;
@@ -20,9 +32,10 @@ public class Movie {
         this.id = id;
     }
 
-    public Movie(String name, String id) {
+    public Movie(String name, String id, String desc) {
         this.name = name;
         this.id = id;
+        this.desc = desc;
     }
 
 }
